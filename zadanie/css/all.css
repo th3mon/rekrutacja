@@ -54,3 +54,37 @@
 .characters [type="checkbox"]:checked + label {
   border-color: black;
 }
+.characters button, .characters button:after {
+  transition: all 0.3s ease-out;
+}
+.characters button {
+  color: #FCDD5C;
+  background-color: #000;
+  border: none;
+  font-size: 2em;
+  padding: 15px 20px;
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  outline: none;
+}
+.characters button:hover {
+  background-color: #FCDD5C;
+  color: #000;
+}
+.characters button:after {
+  position: absolute;
+  top: 0;
+  right: -33.5px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 33.5px 0 33.5px 33.5px;
+  border-color: transparent transparent transparent #000;
+}
+.characters button:hover:after {
+  border-color: transparent transparent transparent #FCDD5C;
+}
